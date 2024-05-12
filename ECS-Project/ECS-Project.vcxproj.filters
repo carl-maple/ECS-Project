@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Types\Vector2f.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Types\Vector2i.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="AABox\AABox.cpp">
+      <Filter>AAbox</Filter>
+    </ClCompile>
+    <ClCompile Include="AABox\AABoxComponentManager.cpp">
+      <Filter>AAbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ComponentManager.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ComponentType.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ComponentTypeManager.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\CameraManager.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Entity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\EntityManager.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="GJKSolver\EPACalculator.cpp">
+      <Filter>GJKSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="GJKSolver\EPAContactInfo.cpp">
+      <Filter>GJKSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="GJKSolver\EPAContactInfoComponentManager.cpp">
+      <Filter>GJKSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="GJKSolver\GJKSolver.cpp">
+      <Filter>GJKSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="GJKSolver\CollisionSystem.cpp">
+      <Filter>GJKSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="System\SystemManager.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\SystemType.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\SystemTypeManager.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="World\World.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldMap.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="GJKSolver\SupportPoint.cpp">
+      <Filter>GJKSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerInput\PlayerInput.cpp">
+      <Filter>PlayerInput</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerInput\PlayerInputMovementSystem.cpp">
+      <Filter>PlayerInput</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GraphicsSystem.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureComponentManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform\TransformComponentManager.cpp">
+      <Filter>Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform\UpdatePosition.cpp">
+      <Filter>Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform\VelocityComponentManager.cpp">
+      <Filter>Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="C\SDL_FontCache.c">
+      <Filter>SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="World\TileMap.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Types\Vector2f.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\Vector2i.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="AABox\AABox.h">
+      <Filter>AAbox</Filter>
+    </ClInclude>
+    <ClInclude Include="AABox\AABoxComponentManager.h">
+      <Filter>AAbox</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Component.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ComponentManager.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ComponentType.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ComponentTypeManager.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\CameraManager.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Entity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\EntityManager.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="GetterUtils.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="GJKSolver\EPACalculator.h">
+      <Filter>GJKSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="GJKSolver\EPAContactInfo.h">
+      <Filter>GJKSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="GJKSolver\EPAContactInfoComponentManager.h">
+      <Filter>GJKSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="GJKSolver\GJKSolver.h">
+      <Filter>GJKSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="GJKSolver\CollisionSystem.h">
+      <Filter>GJKSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="System\System.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\SystemManager.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\SystemType.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\SystemTypeManager.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="World\World.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldMap.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="GJKSolver\SupportPoint.h">
+      <Filter>GJKSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInput\PlayerInput.h">
+      <Filter>PlayerInput</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInput\PlayerInputMovementSystem.h">
+      <Filter>PlayerInput</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GraphicsSystem.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureComponentManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\BitSize.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform\TransformComponentManager.h">
+      <Filter>Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform\UpdatePosition.h">
+      <Filter>Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform\VelocityComponentManager.h">
+      <Filter>Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Base.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Color.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\DebugRender.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="C\SDL_FontCache.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="World\TileMap.h">
+      <Filter>World</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Types">
+      <UniqueIdentifier>{399ea37f-f9e4-4e78-9d3b-5d6e4151dd6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AAbox">
+      <UniqueIdentifier>{fb22aa35-8d78-41fd-9484-7b7fb574f556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{2603f125-42dc-47c1-916d-ec6ef79e606b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{f983079f-5f50-42dd-a5e1-dc029cc005eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{394aa441-1170-4b4c-a18b-e653732fe1c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GJKSolver">
+      <UniqueIdentifier>{63dc39bb-c858-4434-8486-41ab43601483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{d70b0be4-8ee8-48e8-996b-1745f0760eaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{523a9ea7-f0c1-4d5d-b1a8-ce6a486f953e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlayerInput">
+      <UniqueIdentifier>{4f021fe1-68df-40d5-9cb5-b00b953adc76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{5edb7384-90a8-46de-a629-3c72edc31a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transform">
+      <UniqueIdentifier>{ec55120b-9a88-4361-a9c9-1288cbf1757c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{cac2631e-e633-491e-a092-dfef317a3366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL">
+      <UniqueIdentifier>{fa69e313-a287-4d22-ad57-50baf3a1b235}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

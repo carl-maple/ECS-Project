@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AABox\AABox.cpp" />
+    <ClCompile Include="AABox\AABoxComponentManager.cpp" />
+    <ClCompile Include="Camera\Camera.cpp" />
+    <ClCompile Include="Camera\CameraManager.cpp" />
+    <ClCompile Include="Component\ComponentManager.cpp" />
+    <ClCompile Include="Component\ComponentType.cpp" />
+    <ClCompile Include="Component\ComponentTypeManager.cpp" />
+    <ClCompile Include="Entity\Entity.cpp" />
+    <ClCompile Include="Entity\EntityManager.cpp" />
+    <ClCompile Include="GJKSolver\CollisionSystem.cpp" />
+    <ClCompile Include="GJKSolver\EPACalculator.cpp" />
+    <ClCompile Include="GJKSolver\EPAContactInfo.cpp" />
+    <ClCompile Include="GJKSolver\EPAContactInfoComponentManager.cpp" />
+    <ClCompile Include="GJKSolver\GJKSolver.cpp" />
+    <ClCompile Include="GJKSolver\SupportPoint.cpp" />
+    <ClCompile Include="C\SDL_FontCache.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="Graphics\GraphicsSystem.cpp" />
+    <ClCompile Include="Graphics\TextureComponentManager.cpp" />
+    <ClCompile Include="Graphics\TextureManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PlayerInput\PlayerInput.cpp" />
+    <ClCompile Include="PlayerInput\PlayerInputMovementSystem.cpp" />
+    <ClCompile Include="System\SystemManager.cpp" />
+    <ClCompile Include="System\SystemType.cpp" />
+    <ClCompile Include="System\SystemTypeManager.cpp" />
+    <ClCompile Include="Transform\TransformComponentManager.cpp" />
+    <ClCompile Include="Transform\UpdatePosition.cpp" />
+    <ClCompile Include="Transform\VelocityComponentManager.cpp" />
+    <ClCompile Include="Types\Vector2f.cpp" />
+    <ClCompile Include="Types\Vector2i.cpp" />
+    <ClCompile Include="World\TileMap.cpp" />
+    <ClCompile Include="World\World.cpp" />
+    <ClCompile Include="World\WorldMap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AABox\AABox.h" />
+    <ClInclude Include="AABox\AABoxComponentManager.h" />
+    <ClInclude Include="Camera\Camera.h" />
+    <ClInclude Include="Camera\CameraManager.h" />
+    <ClInclude Include="Component\BitSize.h" />
+    <ClInclude Include="Component\Component.h" />
+    <ClInclude Include="Component\ComponentManager.h" />
+    <ClInclude Include="Component\ComponentType.h" />
+    <ClInclude Include="Component\ComponentTypeManager.h" />
+    <ClInclude Include="Entity\Entity.h" />
+    <ClInclude Include="Entity\EntityManager.h" />
+    <ClInclude Include="GJKSolver\CollisionSystem.h" />
+    <ClInclude Include="GJKSolver\EPACalculator.h" />
+    <ClInclude Include="GJKSolver\EPAContactInfo.h" />
+    <ClInclude Include="GJKSolver\EPAContactInfoComponentManager.h" />
+    <ClInclude Include="GJKSolver\GJKSolver.h" />
+    <ClInclude Include="GJKSolver\SupportPoint.h" />
+    <ClInclude Include="C\SDL_FontCache.h" />
+    <ClInclude Include="GetterUtils.h" />
+    <ClInclude Include="Graphics\GraphicsSystem.h" />
+    <ClInclude Include="Graphics\TextureComponentManager.h" />
+    <ClInclude Include="Graphics\TextureManager.h" />
+    <ClInclude Include="PlayerInput\PlayerInput.h" />
+    <ClInclude Include="PlayerInput\PlayerInputMovementSystem.h" />
+    <ClInclude Include="System\System.h" />
+    <ClInclude Include="System\SystemManager.h" />
+    <ClInclude Include="System\SystemType.h" />
+    <ClInclude Include="System\SystemTypeManager.h" />
+    <ClInclude Include="Transform\TransformComponentManager.h" />
+    <ClInclude Include="Transform\UpdatePosition.h" />
+    <ClInclude Include="Transform\VelocityComponentManager.h" />
+    <ClInclude Include="Types\Vector2f.h" />
+    <ClInclude Include="Types\Vector2i.h" />
+    <ClInclude Include="Utils\Base.h" />
+    <ClInclude Include="Utils\Color.h" />
+    <ClInclude Include="Utils\DebugRender.h" />
+    <ClInclude Include="World\TileMap.h" />
+    <ClInclude Include="World\World.h" />
+    <ClInclude Include="World\WorldMap.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{64FB04BA-DE62-4015-8345-FEFC9FE93B98}</ProjectGuid>
+    <RootNamespace>SpaceInvadersIteration1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\Carl-Oscar\Desktop\Iteration Space Invaders\SpaceInvadersIteration1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Carl-Oscar\Desktop\Iteration Space Invaders\SpaceInvadersIteration1\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\Carl-Oscar\Desktop\Iteration Space Invaders\SpaceInvadersIteration1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Carl-Oscar\Desktop\Iteration Space Invaders\SpaceInvadersIteration1\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)ECS-Project;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Carl-Oscar\Desktop\Iteration Space Invaders\SpaceInvadersIteration1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\Carl-Oscar\Desktop\Iteration Space Invaders\SpaceInvadersIteration1\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;glew32.lib;opengl32.lib;glu32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
